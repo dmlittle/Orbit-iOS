@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D1F899A18985F6600E4B81D /* ORBStarCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F899918985F6600E4B81D /* ORBStarCount.m */; };
+		9D33312318886FDF00680735 /* levelsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D33312218886FDF00680735 /* levelsList.plist */; };
+		9D3331261888947700680735 /* ORBLevelNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3331251888947700680735 /* ORBLevelNode.m */; };
+		9D3331281888D60500680735 /* tutorialLevel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D3331271888D60500680735 /* tutorialLevel.plist */; };
+		9D5887CB1883BA1D000FB698 /* smoke.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D5887CA1883BA1D000FB698 /* smoke.sks */; };
+		9D5887CE1883C374000FB698 /* main-soundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D5887CD1883C374000FB698 /* main-soundtrack.mp3 */; };
+		9D596D871881ACD900FBBC93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D596D861881ACD900FBBC93 /* Foundation.framework */; };
+		9D596D8B1881ACD900FBBC93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D596D8A1881ACD900FBBC93 /* UIKit.framework */; };
+		9D596D8D1881ACD900FBBC93 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D596D8C1881ACD900FBBC93 /* SpriteKit.framework */; };
+		9D596D931881ACD900FBBC93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D596D911881ACD900FBBC93 /* InfoPlist.strings */; };
+		9D596D951881ACD900FBBC93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D596D941881ACD900FBBC93 /* main.m */; };
+		9D596D991881ACD900FBBC93 /* ORBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D596D981881ACD900FBBC93 /* ORBAppDelegate.m */; };
+		9D596D9C1881ACD900FBBC93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D596D9A1881ACD900FBBC93 /* Main.storyboard */; };
+		9D596D9F1881ACD900FBBC93 /* ORBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D596D9E1881ACD900FBBC93 /* ORBViewController.m */; };
+		9D596DA61881ACD900FBBC93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D596DA51881ACD900FBBC93 /* Images.xcassets */; };
+		9D596DAD1881ACD900FBBC93 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D596DAC1881ACD900FBBC93 /* XCTest.framework */; };
+		9D596DAE1881ACD900FBBC93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D596D861881ACD900FBBC93 /* Foundation.framework */; };
+		9D596DAF1881ACD900FBBC93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D596D8A1881ACD900FBBC93 /* UIKit.framework */; };
+		9D596DB71881ACD900FBBC93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D596DB51881ACD900FBBC93 /* InfoPlist.strings */; };
+		9D596DB91881ACD900FBBC93 /* OrbitzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D596DB81881ACD900FBBC93 /* OrbitzTests.m */; };
+		9D596DC41881B85400FBBC93 /* space.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9D596DC21881B85400FBBC93 /* space.sks */; };
+		9D596DC51881B85400FBBC93 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D596DC31881B85400FBBC93 /* spark.png */; };
+		9D8559A0188FA94E0058501E /* levels.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D85599F188FA94E0058501E /* levels.plist */; };
+		9D9DE2E41899D405000A5ACF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9DE2E31899D405000A5ACF /* AVFoundation.framework */; };
+		9DA476E31899F3AF00CAA3B3 /* beep_no_access.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9DA476E21899F3AF00CAA3B3 /* beep_no_access.mp3 */; };
+		9DA900F118938C8C0074E730 /* ORBGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA900F018938C8C0074E730 /* ORBGameScene.m */; };
+		9DAC2C90188256F500A2D4C5 /* ORBMainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DAC2C8F188256F500A2D4C5 /* ORBMainScene.m */; };
+		9DCE81FC188F045F006DDF8E /* ORBCreatePlanet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCE81FB188F045F006DDF8E /* ORBCreatePlanet.m */; };
+		9DEF348D188786D9006E725C /* goal.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9DEF348C188786D9006E725C /* goal.sks */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D596DB01881ACD900FBBC93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D596D7B1881ACD900FBBC93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D596D821881ACD900FBBC93;
+			remoteInfo = Orbitz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D1F899818985F6600E4B81D /* ORBStarCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBStarCount.h; sourceTree = "<group>"; };
+		9D1F899918985F6600E4B81D /* ORBStarCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBStarCount.m; sourceTree = "<group>"; };
+		9D33312218886FDF00680735 /* levelsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = levelsList.plist; sourceTree = "<group>"; };
+		9D3331241888947700680735 /* ORBLevelNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBLevelNode.h; sourceTree = "<group>"; };
+		9D3331251888947700680735 /* ORBLevelNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBLevelNode.m; sourceTree = "<group>"; };
+		9D3331271888D60500680735 /* tutorialLevel.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tutorialLevel.plist; sourceTree = "<group>"; };
+		9D5887CA1883BA1D000FB698 /* smoke.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = smoke.sks; sourceTree = "<group>"; };
+		9D5887CD1883C374000FB698 /* main-soundtrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "main-soundtrack.mp3"; sourceTree = "<group>"; };
+		9D596D831881ACD900FBBC93 /* Orbitz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Orbitz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D596D861881ACD900FBBC93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9D596D881881ACD900FBBC93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9D596D8A1881ACD900FBBC93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9D596D8C1881ACD900FBBC93 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		9D596D901881ACD900FBBC93 /* Orbitz-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Orbitz-Info.plist"; sourceTree = "<group>"; };
+		9D596D921881ACD900FBBC93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9D596D941881ACD900FBBC93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9D596D961881ACD900FBBC93 /* Orbitz-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Orbitz-Prefix.pch"; sourceTree = "<group>"; };
+		9D596D971881ACD900FBBC93 /* ORBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORBAppDelegate.h; sourceTree = "<group>"; };
+		9D596D981881ACD900FBBC93 /* ORBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORBAppDelegate.m; sourceTree = "<group>"; };
+		9D596D9B1881ACD900FBBC93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D596D9D1881ACD900FBBC93 /* ORBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORBViewController.h; sourceTree = "<group>"; };
+		9D596D9E1881ACD900FBBC93 /* ORBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORBViewController.m; sourceTree = "<group>"; };
+		9D596DA51881ACD900FBBC93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9D596DAB1881ACD900FBBC93 /* OrbitzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrbitzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D596DAC1881ACD900FBBC93 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9D596DB41881ACD900FBBC93 /* OrbitzTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrbitzTests-Info.plist"; sourceTree = "<group>"; };
+		9D596DB61881ACD900FBBC93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9D596DB81881ACD900FBBC93 /* OrbitzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrbitzTests.m; sourceTree = "<group>"; };
+		9D596DC21881B85400FBBC93 /* space.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = space.sks; sourceTree = "<group>"; };
+		9D596DC31881B85400FBBC93 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		9D85599F188FA94E0058501E /* levels.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = levels.plist; sourceTree = "<group>"; };
+		9D9DE2D11899D38B000A5ACF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		9D9DE2DF1899D3D3000A5ACF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		9D9DE2E11899D3EA000A5ACF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9D9DE2E31899D405000A5ACF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9D9DE2E51899D419000A5ACF /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9D9DE2E71899D41F000A5ACF /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9D9DE2E91899D43A000A5ACF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		9D9DE2EB1899D443000A5ACF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		9D9DE2ED1899D44A000A5ACF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		9D9DE2EF1899D451000A5ACF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9D9DE2F11899D457000A5ACF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9DA476E21899F3AF00CAA3B3 /* beep_no_access.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep_no_access.mp3; sourceTree = "<group>"; };
+		9DA900EF18938C8C0074E730 /* ORBGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBGameScene.h; sourceTree = "<group>"; };
+		9DA900F018938C8C0074E730 /* ORBGameScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBGameScene.m; sourceTree = "<group>"; };
+		9DAC2C8E188256F500A2D4C5 /* ORBMainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBMainScene.h; sourceTree = "<group>"; };
+		9DAC2C8F188256F500A2D4C5 /* ORBMainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBMainScene.m; sourceTree = "<group>"; };
+		9DC5346E18A308E600C51571 /* CGMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGMath.h; sourceTree = "<group>"; };
+		9DCE81FA188F045F006DDF8E /* ORBCreatePlanet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORBCreatePlanet.h; sourceTree = "<group>"; };
+		9DCE81FB188F045F006DDF8E /* ORBCreatePlanet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORBCreatePlanet.m; sourceTree = "<group>"; };
+		9DEF348C188786D9006E725C /* goal.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = goal.sks; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D596D801881ACD900FBBC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D596D8B1881ACD900FBBC93 /* UIKit.framework in Frameworks */,
+				9D596D8D1881ACD900FBBC93 /* SpriteKit.framework in Frameworks */,
+				9D596D871881ACD900FBBC93 /* Foundation.framework in Frameworks */,
+				9D9DE2E41899D405000A5ACF /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D596DA81881ACD900FBBC93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D596DAD1881ACD900FBBC93 /* XCTest.framework in Frameworks */,
+				9D596DAF1881ACD900FBBC93 /* UIKit.framework in Frameworks */,
+				9D596DAE1881ACD900FBBC93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D5887CC1883C357000FB698 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				9DA476E21899F3AF00CAA3B3 /* beep_no_access.mp3 */,
+				9D5887CD1883C374000FB698 /* main-soundtrack.mp3 */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		9D596D7A1881ACD900FBBC93 = {
+			isa = PBXGroup;
+			children = (
+				9D596D8E1881ACD900FBBC93 /* Orbitz */,
+				9D596DB21881ACD900FBBC93 /* OrbitzTests */,
+				9D596D851881ACD900FBBC93 /* Frameworks */,
+				9D596D841881ACD900FBBC93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D596D841881ACD900FBBC93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D596D831881ACD900FBBC93 /* Orbitz.app */,
+				9D596DAB1881ACD900FBBC93 /* OrbitzTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D596D851881ACD900FBBC93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D9DE2F11899D457000A5ACF /* Security.framework */,
+				9D9DE2EF1899D451000A5ACF /* QuartzCore.framework */,
+				9D9DE2ED1899D44A000A5ACF /* OpenGLES.framework */,
+				9D9DE2EB1899D443000A5ACF /* MessageUI.framework */,
+				9D9DE2E91899D43A000A5ACF /* MediaPlayer.framework */,
+				9D9DE2E71899D41F000A5ACF /* CoreVideo.framework */,
+				9D9DE2E51899D419000A5ACF /* CoreMedia.framework */,
+				9D9DE2E31899D405000A5ACF /* AVFoundation.framework */,
+				9D9DE2E11899D3EA000A5ACF /* AudioToolbox.framework */,
+				9D9DE2DF1899D3D3000A5ACF /* AdSupport.framework */,
+				9D9DE2D11899D38B000A5ACF /* Accounts.framework */,
+				9D596D861881ACD900FBBC93 /* Foundation.framework */,
+				9D596D881881ACD900FBBC93 /* CoreGraphics.framework */,
+				9D596D8A1881ACD900FBBC93 /* UIKit.framework */,
+				9D596D8C1881ACD900FBBC93 /* SpriteKit.framework */,
+				9D596DAC1881ACD900FBBC93 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D596D8E1881ACD900FBBC93 /* Orbitz */ = {
+			isa = PBXGroup;
+			children = (
+				9D596D971881ACD900FBBC93 /* ORBAppDelegate.h */,
+				9D596D981881ACD900FBBC93 /* ORBAppDelegate.m */,
+				9D596D9A1881ACD900FBBC93 /* Main.storyboard */,
+				9D596D9D1881ACD900FBBC93 /* ORBViewController.h */,
+				9D596D9E1881ACD900FBBC93 /* ORBViewController.m */,
+				9DAC2C8E188256F500A2D4C5 /* ORBMainScene.h */,
+				9DAC2C8F188256F500A2D4C5 /* ORBMainScene.m */,
+				9DA900EF18938C8C0074E730 /* ORBGameScene.h */,
+				9DA900F018938C8C0074E730 /* ORBGameScene.m */,
+				9D3331241888947700680735 /* ORBLevelNode.h */,
+				9D3331251888947700680735 /* ORBLevelNode.m */,
+				9DCE81FA188F045F006DDF8E /* ORBCreatePlanet.h */,
+				9DCE81FB188F045F006DDF8E /* ORBCreatePlanet.m */,
+				9D1F899818985F6600E4B81D /* ORBStarCount.h */,
+				9D1F899918985F6600E4B81D /* ORBStarCount.m */,
+				9D596DC21881B85400FBBC93 /* space.sks */,
+				9D5887CA1883BA1D000FB698 /* smoke.sks */,
+				9DEF348C188786D9006E725C /* goal.sks */,
+				9D596DC31881B85400FBBC93 /* spark.png */,
+				9D596DA51881ACD900FBBC93 /* Images.xcassets */,
+				9D7D605A1889CE1A0080D7E8 /* Helper Files */,
+				9D5887CC1883C357000FB698 /* Audio */,
+				9D596D8F1881ACD900FBBC93 /* Supporting Files */,
+			);
+			path = Orbitz;
+			sourceTree = "<group>";
+		};
+		9D596D8F1881ACD900FBBC93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D596D901881ACD900FBBC93 /* Orbitz-Info.plist */,
+				9D596D911881ACD900FBBC93 /* InfoPlist.strings */,
+				9D596D941881ACD900FBBC93 /* main.m */,
+				9D596D961881ACD900FBBC93 /* Orbitz-Prefix.pch */,
+				9D33312218886FDF00680735 /* levelsList.plist */,
+				9D85599F188FA94E0058501E /* levels.plist */,
+				9D3331271888D60500680735 /* tutorialLevel.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D596DB21881ACD900FBBC93 /* OrbitzTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D596DB81881ACD900FBBC93 /* OrbitzTests.m */,
+				9D596DB31881ACD900FBBC93 /* Supporting Files */,
+			);
+			path = OrbitzTests;
+			sourceTree = "<group>";
+		};
+		9D596DB31881ACD900FBBC93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D596DB41881ACD900FBBC93 /* OrbitzTests-Info.plist */,
+				9D596DB51881ACD900FBBC93 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9D7D605A1889CE1A0080D7E8 /* Helper Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DC5346E18A308E600C51571 /* CGMath.h */,
+			);
+			name = "Helper Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D596D821881ACD900FBBC93 /* Orbitz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D596DBC1881ACD900FBBC93 /* Build configuration list for PBXNativeTarget "Orbitz" */;
+			buildPhases = (
+				9D596D7F1881ACD900FBBC93 /* Sources */,
+				9D596D801881ACD900FBBC93 /* Frameworks */,
+				9D596D811881ACD900FBBC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Orbitz;
+			productName = Orbitz;
+			productReference = 9D596D831881ACD900FBBC93 /* Orbitz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D596DAA1881ACD900FBBC93 /* OrbitzTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D596DBF1881ACD900FBBC93 /* Build configuration list for PBXNativeTarget "OrbitzTests" */;
+			buildPhases = (
+				9D596DA71881ACD900FBBC93 /* Sources */,
+				9D596DA81881ACD900FBBC93 /* Frameworks */,
+				9D596DA91881ACD900FBBC93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D596DB11881ACD900FBBC93 /* PBXTargetDependency */,
+			);
+			name = OrbitzTests;
+			productName = OrbitzTests;
+			productReference = 9D596DAB1881ACD900FBBC93 /* OrbitzTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D596D7B1881ACD900FBBC93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ORB;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Donald Little";
+				TargetAttributes = {
+					9D596D821881ACD900FBBC93 = {
+						DevelopmentTeam = GZNS8GQYRG;
+					};
+					9D596DAA1881ACD900FBBC93 = {
+						TestTargetID = 9D596D821881ACD900FBBC93;
+					};
+				};
+			};
+			buildConfigurationList = 9D596D7E1881ACD900FBBC93 /* Build configuration list for PBXProject "Orbitz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D596D7A1881ACD900FBBC93;
+			productRefGroup = 9D596D841881ACD900FBBC93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D596D821881ACD900FBBC93 /* Orbitz */,
+				9D596DAA1881ACD900FBBC93 /* OrbitzTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D596D811881ACD900FBBC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DEF348D188786D9006E725C /* goal.sks in Resources */,
+				9D8559A0188FA94E0058501E /* levels.plist in Resources */,
+				9D596DC51881B85400FBBC93 /* spark.png in Resources */,
+				9D5887CE1883C374000FB698 /* main-soundtrack.mp3 in Resources */,
+				9D33312318886FDF00680735 /* levelsList.plist in Resources */,
+				9D596D931881ACD900FBBC93 /* InfoPlist.strings in Resources */,
+				9D596DA61881ACD900FBBC93 /* Images.xcassets in Resources */,
+				9D596D9C1881ACD900FBBC93 /* Main.storyboard in Resources */,
+				9D596DC41881B85400FBBC93 /* space.sks in Resources */,
+				9DA476E31899F3AF00CAA3B3 /* beep_no_access.mp3 in Resources */,
+				9D3331281888D60500680735 /* tutorialLevel.plist in Resources */,
+				9D5887CB1883BA1D000FB698 /* smoke.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D596DA91881ACD900FBBC93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D596DB71881ACD900FBBC93 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D596D7F1881ACD900FBBC93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3331261888947700680735 /* ORBLevelNode.m in Sources */,
+				9DAC2C90188256F500A2D4C5 /* ORBMainScene.m in Sources */,
+				9D596D9F1881ACD900FBBC93 /* ORBViewController.m in Sources */,
+				9DCE81FC188F045F006DDF8E /* ORBCreatePlanet.m in Sources */,
+				9D596D991881ACD900FBBC93 /* ORBAppDelegate.m in Sources */,
+				9D1F899A18985F6600E4B81D /* ORBStarCount.m in Sources */,
+				9DA900F118938C8C0074E730 /* ORBGameScene.m in Sources */,
+				9D596D951881ACD900FBBC93 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D596DA71881ACD900FBBC93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D596DB91881ACD900FBBC93 /* OrbitzTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D596DB11881ACD900FBBC93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D596D821881ACD900FBBC93 /* Orbitz */;
+			targetProxy = 9D596DB01881ACD900FBBC93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D596D911881ACD900FBBC93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D596D921881ACD900FBBC93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9D596D9A1881ACD900FBBC93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D596D9B1881ACD900FBBC93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D596DB51881ACD900FBBC93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D596DB61881ACD900FBBC93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D596DBA1881ACD900FBBC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9D596DBB1881ACD900FBBC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D596DBD1881ACD900FBBC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Orbitz/Orbitz-Prefix.pch";
+				INFOPLIST_FILE = "Orbitz/Orbitz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9D596DBE1881ACD900FBBC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Orbitz/Orbitz-Prefix.pch";
+				INFOPLIST_FILE = "Orbitz/Orbitz-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9D596DC01881ACD900FBBC93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Orbitz.app/Orbitz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Orbitz/Orbitz-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OrbitzTests/OrbitzTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9D596DC11881ACD900FBBC93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Orbitz.app/Orbitz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Orbitz/Orbitz-Prefix.pch";
+				INFOPLIST_FILE = "OrbitzTests/OrbitzTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D596D7E1881ACD900FBBC93 /* Build configuration list for PBXProject "Orbitz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D596DBA1881ACD900FBBC93 /* Debug */,
+				9D596DBB1881ACD900FBBC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D596DBC1881ACD900FBBC93 /* Build configuration list for PBXNativeTarget "Orbitz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D596DBD1881ACD900FBBC93 /* Debug */,
+				9D596DBE1881ACD900FBBC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D596DBF1881ACD900FBBC93 /* Build configuration list for PBXNativeTarget "OrbitzTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D596DC01881ACD900FBBC93 /* Debug */,
+				9D596DC11881ACD900FBBC93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D596D7B1881ACD900FBBC93 /* Project object */;
+}
